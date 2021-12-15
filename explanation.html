@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>more info</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="icon" href="icon.JPG" type="image/x-icon">
+<style>
+body, html {
+  height: 100%;
+  font-family: "comic sans", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Final .html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="Link 1.html"  class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Pictures</a>
+    <a href="explanation.html" class="w3-bar-item w3-button w3-padding-large w3-white">information</a>
+    <a href="credits.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Credits</a>
+  </div>
+
+
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About hospital technology</span></h5>
+    <p>When you think about hospital technology some people think of just the computers that dock people in or the cat scans but, did yo know there was new technolgy that hospitals are trying to use/tryout? Hospitals are lookin forward to Artificial intelligence and chatbots! An artificial intellingence will help doctors and nurses remember to give paticent's medicen when they are busy, and identifying people at a high risk. These all are a great help to thoes in need and thoes working for the protection of people. The chatbot is also something that can benifit the patient and doctors! The chatbot is a robot that patients can use when stuck in there room. The chatbot can call the doctor or nurse with a push of a button and can even answer some questions! The chatbot has many grat features making it the perfect patient/doctor helper.</p>
+    <p>Cuando piensas en la tecnología hospitalaria, algunas personas piensan solo en las computadoras que conectan a las personas o en los escaneos de gatos, pero, ¿sabías que había una nueva tecnología que los hospitales están tratando de usar / probar? ¡Los hospitales esperan con ansias la inteligencia artificial y los chatbots! Una inteligencia artificial ayudará a los médicos y enfermeras a recordar administrar los medicamentos de los pacientes cuando estén ocupados e identificar a las personas de alto riesgo. Todos estos son de gran ayuda para los necesitados y los que trabajan por la protección de las personas. ¡El chatbot también es algo que puede beneficiar al paciente y a los médicos! El chatbot es un robot que los pacientes pueden usar cuando están atrapados en su habitación. El chatbot puede llamar al médico o la enfermera con solo presionar un botón e incluso puede responder algunas preguntas. El chatbot tiene muchas características interesantes que lo convierten en el ayudante perfecto para el paciente / médico.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>. “Everything that irritates us about others can lead us to an understanding of ourselves.”
+
+—Carl Jung</p>
+    </div>
+   
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+
+</body>
+</html>

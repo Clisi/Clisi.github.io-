@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Hospital Technology</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="icon" href="icon.JPG" type="image/x-icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="Link 1.html"  class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Pictures</a>
+    <a href="explanation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">information</a>
+    <a href="credits.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Credits</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Pictures</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Explanation</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Credits</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:128px 16px ; background-image:url(download.jpg);">
+  <h1 class="w3-margin w3-jumbo">How does Hospitals use Technology</h1>
+  <p class="w3-xlarge">By Cianna L.</p>
+  
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Summary</h1>
+      <h5 class="w3-padding-32">Many hospitals use technology to help update charts,order test,and write down perscription for patient. Some things that Doctors also ca do is that since Covid is all about social distancing doctors and patients could zoom with eachother and have daily/monthly check ups whithout having to go in person. Technology has helped the medical indrustry since the early 1960's and 1970's. When using this technology it has helped us understand and discover the treatment of many different deseases and viruses. </h5>
+		<h1>Resumen</h1>
+      <p class="w3-text-black">Muchos hospitales utilizan la tecnología para ayudar a actualizar los gráficos, solicitar pruebas y anotar la prescripción para el paciente. Algunas cosas que los médicos también pueden hacer es que, dado que Covid tiene que ver con el distanciamiento social, los médicos y los pacientes pueden acercarse entre sí y hacerse chequeos diarios / mensuales sin tener que ir en persona. La tecnología ha ayudado a la industria médica desde principios de los años sesenta y setenta. El uso de esta tecnología nos ha ayudado a comprender y descubrir el tratamiento de muchas enfermedades y virus diferentes.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src ="Capture.JPG" width="300">
+    </div>
+  </div>
+</div>
+
+</footer>
+
+
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<script language="JavaScript">
+
+
+
+//Comment trail script- By Kurt (kurt.grigg@virgin.net)
+
+//Script featured on Dynamic Drive
+
+//Visit http://www.dynamicdrive.com for this script and more
+
+
+
+colours=new Array('#ff0000','#00ff00','#ffffff','#ff00ff','#ffa500','#ffff00','#00ff00','#ffffff','ff00ff')
+
+n = 10;
+
+y = 0;
+
+x = 0;
+
+n6=(document.getElementById&&!document.all);
+
+ns=(document.layers);
+
+ie=(document.all);
+
+d=(ns||ie)?'document.':'document.getElementById("';
+
+a=(ns||n6)?'':'all.';
+
+n6r=(n6)?'")':'';
+
+s=(ns)?'':'.style';
+
+if (ns){
+
+for (i = 0; i < n; i++)
+
+document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
+
+}
+
+if (ie)
+
+document.write('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+
+if (ie||n6){
+
+for (i = 0; i < n; i++)
+
+document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
+
+}
+
+if (ie)
+
+document.write('</div></div>');
+
+(ns||n6)?window.captureEvents(Event.MOUSEMOVE):0;
+
+function Mouse(evnt){
+
+y = (ns||n6)?evnt.pageY+4 - window.pageYOffset:event.y+4;
+
+x = (ns||n6)?evnt.pageX+1:event.x+1;
+
+}
+
+(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+
+function animate(){
+
+o=(ns||n6)?window.pageYOffset:0;
+
+if (ie)con.style.top=document.body.scrollTop + 'px';
+
+for (i = 0; i < n; i++){
+
+var temp1 = eval(d+a+"dots"+i+n6r+s);
+
+
+
+randcolours = colours[Math.floor(Math.random()*colours.length)];
+
+(ns)?temp1.bgColor = randcolours:temp1.background = randcolours; 
+
+if (i < n-1){
+
+ var temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
+
+ temp1.top = parseInt(temp2.top) + 'px';
+
+ temp1.left = parseInt(temp2.left) + 'px';
+
+ } 
+
+else{
+
+ temp1.top = y+o + 'px';
+
+ temp1.left = x + 'px';
+
+ }
+
+}
+
+setTimeout("animate()",10);
+
+}
+
+animate();
+
+// -->
+
+</script>
+</body>
+</html>

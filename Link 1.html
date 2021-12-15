@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<title>Pictures</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="icon.JPG" type="image/x-icon">
+<body>
+
+
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Final .html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="Link 1.html"  class="w3-bar-item w3-button w3-padding-large w3-white">Pictures</a>
+    <a href="explanation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">information</a>
+    <a href="credits.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Credits</a>
+  </div>
+
+<div class="w3-display-container" style="margin-bottom:50px">
+  <img src="download1.png" style="width:20%">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="w3-display-bottomleft w3-container w3-red w3-hover-black w3-hide-small"
+   style="bottom:10%;opacity:0.7;width:70%">
+  <h2><b>Some pictures<br>and little backstory</b></h2>
+</div>
+</div>
+
+<div class="w3-row w3-container" style="margin:50px 0">
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-blue">
+    <img src="download (1).jpg" style="width:100%">
+    <h5>This doctor is using her computer to help identify if anything is wrong with the patient's brain. They are making sure that there is no tumors or brain damage from a fatal accident.</h5>
+    <p>Este médico está usando su computadora para ayudar a identificar si hay algún problema con el cerebro del paciente. Se están asegurando de que no haya tumores o daño cerebral por un accidente fatal.
+</p>
+  </div>
+</div>
+
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-blue">
+    <img src="pregnant.jpg" style="width:100%">
+    <h5>This nurse is using her tablet to show the woman how big her baby is looking and how heathly the baby is doing. The nurse can use this to idetify if anything is wrong before any complications come to the baby.</h5>
+    <p>Esta enfermera está usando su tableta para mostrarle a la mujer qué tan grande se ve su bebé y qué tan bien está. La enfermera puede usar esto para identificar si algo anda mal antes de que surjan complicaciones para el bebé.
+</p>
+  </div>
+</div>
+</div>
+
+<div class="w3-row w3-container" style="margin:50px 0">
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-orange">
+    <img src="download (2).jpg" style="width:100%">
+    <h5>If your having heart surgery or in a coma this monotor tracks your heartbeats and vitals making sure that you don't go to low or to hight with your heartbeat causing you to go into cardiac arrest.</h5>
+    <p>Si se somete a una cirugía cardíaca o está en coma, este monotor rastrea los latidos y signos vitales de su corazón, asegurándose de que no baje o suba con los latidos del corazón, lo que le provocará un paro cardíaco.</p>
+  </div>
+</div>
+
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-orange">
+    <img src="download (3).jpg" style="width:100%">
+    <h5>When undergoing operation doctors need to use a lot of technology to make sure that your body stays in a heathly state while being opereated on. If your body does happen to fall out of the designated area for heartbeats/and or vitals, it will notify the doctors quickly so that they can make sure you die.</h5>
+    <p>Cuando se someten a una operación, los médicos necesitan usar mucha tecnología para asegurarse de que su cuerpo se mantenga saludable mientras lo operan. Si su cuerpo se sale del área designada para los latidos del corazón o los signos vitales, notificará a los médicos rápidamente para que puedan asegurarse de que muera.</p>
+    </div>
+</div>
+</div>
+<script language="JavaScript">
+
+
+
+//Comment trail script- By Kurt (kurt.grigg@virgin.net)
+
+//Script featured on Dynamic Drive
+
+//Visit http://www.dynamicdrive.com for this script and more
+
+
+
+colours=new Array('#ff0000','#00ff00','#ffffff','#ff00ff','#ffa500','#ffff00','#00ff00','#ffffff','ff00ff')
+
+n = 10;
+
+y = 0;
+
+x = 0;
+
+n6=(document.getElementById&&!document.all);
+
+ns=(document.layers);
+
+ie=(document.all);
+
+d=(ns||ie)?'document.':'document.getElementById("';
+
+a=(ns||n6)?'':'all.';
+
+n6r=(n6)?'")':'';
+
+s=(ns)?'':'.style';
+
+if (ns){
+
+for (i = 0; i < n; i++)
+
+document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
+
+}
+
+if (ie)
+
+document.write('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+
+if (ie||n6){
+
+for (i = 0; i < n; i++)
+
+document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
+
+}
+
+if (ie)
+
+document.write('</div></div>');
+
+(ns||n6)?window.captureEvents(Event.MOUSEMOVE):0;
+
+function Mouse(evnt){
+
+y = (ns||n6)?evnt.pageY+4 - window.pageYOffset:event.y+4;
+
+x = (ns||n6)?evnt.pageX+1:event.x+1;
+
+}
+
+(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+
+function animate(){
+
+o=(ns||n6)?window.pageYOffset:0;
+
+if (ie)con.style.top=document.body.scrollTop + 'px';
+
+for (i = 0; i < n; i++){
+
+var temp1 = eval(d+a+"dots"+i+n6r+s);
+
+
+
+randcolours = colours[Math.floor(Math.random()*colours.length)];
+
+(ns)?temp1.bgColor = randcolours:temp1.background = randcolours; 
+
+if (i < n-1){
+
+ var temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
+
+ temp1.top = parseInt(temp2.top) + 'px';
+
+ temp1.left = parseInt(temp2.left) + 'px';
+
+ } 
+
+else{
+
+ temp1.top = y+o + 'px';
+
+ temp1.left = x + 'px';
+
+ }
+
+}
+
+setTimeout("animate()",10);
+
+}
+
+animate();
+
+// -->
+
+</script>
+</body>
+</html>
